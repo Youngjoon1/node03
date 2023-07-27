@@ -1,0 +1,10 @@
+<h1>quiz페이지 입니다</h1>
+<% console.log("Cookie : " , userCookie)  %>
+<% if(userCookie == undefined) { %>
+    <script>
+    const opt = "width=300, height=200, top=500, left=500";
+    window.open("/cookie/quiz_popup","",opt);
+    </script>
+<% }else { %>
+    쿠키가 유지중
+<% } %>
